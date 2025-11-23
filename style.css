@@ -1,0 +1,190 @@
+/* ==================== 全局样式 ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", "SimSun", Arial, sans-serif;
+    background-color: #E6F3FF;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* ==================== 容器样式 ==================== */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ==================== 标题样式 ==================== */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5em;
+    margin: 0 0 30px 0;
+    padding: 25px;
+    background: linear-gradient(135deg, #5B9BD5 0%, #4A90E2 100%);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(74, 144, 226, 0.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #4A90E2;
+    font-size: 1.8em;
+    margin: 30px 0 20px 0;
+    padding: 15px 0;
+    border-bottom: 3px solid #5B9BD5;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #4A90E2;
+    font-size: 1.5em;
+    margin: 25px 0 15px 0;
+    padding-left: 10px;
+    border-left: 5px solid #5B9BD5;
+    font-weight: bold;
+}
+
+/* ==================== 段落样式 ==================== */
+p {
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.8;
+    color: #444;
+    font-size: 16px;
+}
+
+p[align="right"] {
+    text-align: right;
+    text-indent: 0;
+}
+
+p[align="center"] {
+    text-align: center;
+    text-indent: 0;
+}
+
+/* ==================== 链接样式 ==================== */
+a {
+    color: #4A90E2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #5B9BD5;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #6BA3D9;
+}
+
+/* ==================== 分隔线样式 ==================== */
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #5B9BD5, #4A90E2, transparent);
+    margin: 30px 0;
+    border-radius: 2px;
+}
+
+/* ==================== 表格样式 ==================== */
+table {
+    width: 90%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #5B9BD5;
+}
+
+table thead {
+    background: linear-gradient(135deg, #4A90E2 0%, #5B9BD5 100%);
+}
+
+table th {
+    color: #fff;
+    padding: 18px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    transition: background 0.3s ease;
+}
+
+table tbody tr:nth-child(even) {
+    background: #F0F7FF;
+}
+
+table tbody tr:hover {
+    background: #E0F0FF;
+    transform: scale(1.01);
+}
+
+table tbody td a {
+    color: #4A90E2;
+    font-weight: 600;
+}
+
+table tbody td a:hover {
+    color: #5B9BD5;
+    text-decoration: underline;
+}
+
+/* ==================== 响应式设计 ==================== */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+    
+    table {
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    table th,
+    table td {
+        padding: 10px 5px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+}
